@@ -1,4 +1,4 @@
-FROM arm64v8/centos:8.1.1911
+FROM arm64v8/centos:7
 
 COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
 
@@ -9,6 +9,3 @@ RUN yum update -y && \
     yum group install -y "Development Tools" && \
     yum clean all && \
     rm -rf /var/cache/yum/* /tmp/* /var/tmp/*
-
-RUN uname -a
-RUN rpm -qa
