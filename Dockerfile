@@ -9,3 +9,6 @@ RUN yum update -y && \
     yum group install -y "Development Tools" && \
     yum clean all && \
     rm -rf /var/cache/yum/* /tmp/* /var/tmp/*
+
+RUN uname -a
+RUN rpm -qa
