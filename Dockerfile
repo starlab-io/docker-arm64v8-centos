@@ -1,4 +1,4 @@
-FROM arm64v8/centos:7
+FROM arm64v8/centos:8
 
 COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
 
